@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form>
+        <img src="peezy.jpg" alt="peezy" class="img">
+        <div class="form-group">
+            <section>
+                <div>
+                    <label for="Name">First Name</label><br>
+                    <input type="text" id="first-name" class="form-control">
+                </div>
+                <div>
+                    <label for="surname">Surname</label><br>
+                    <input type="text" id="surname" class="form-control">
+                </div>
+            </section>
+
+        </div>
+        <div class="form-group">
+            <section>
+                <div>
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username" class="form-control">
+                </div>
+                <div>
+                    <label for="email">E-mail address</label><br>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" class="form-control">
+                </div>
+            </section>
+        </div>
+        <div class="form-group">
+            <section>
+                <div>
+                    <label for="password-input">Password</label><br>
+                    <input type="password" id="password-input" class="form-control" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+                    <div id="message">
+                        <p id="length" class="invalid"> atleast 8 characters</p>
+
+                    </div>
+                </div>
+                <div>
+                    <label for="confirm-password">Retype password</label><br>
+                    <input type="password" id="confirm-password" class="form-control"><br>
+                    <small style="display: none" id="error-message" class="text-danger">Both password fields must match.</small>
+                </div>
+            </section>
+        </div>
+        <div class="button">
+            <button type="submit" id="submit-button" class="btn">Submit</button>
+        </div>
+        <p class="para">Already have an account<a href="index.html"> Sign in</a></p>
+    </form>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
